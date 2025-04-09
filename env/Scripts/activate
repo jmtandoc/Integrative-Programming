@@ -35,7 +35,11 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
+<<<<<<< HEAD
 VIRTUAL_ENV="C:\Users\jhoan\Documents\MMDC\Connectly_Project_Miletone1\env"
+=======
+VIRTUAL_ENV="C:\Users\jhoan\Documents\MMDC\Connectly_Project_Miletone1\connectly_projectM1\env"
+>>>>>>> 6cbdd50e (I commit)
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

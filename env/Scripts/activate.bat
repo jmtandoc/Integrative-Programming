@@ -8,7 +8,11 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
+<<<<<<< HEAD
 set VIRTUAL_ENV=C:\Users\jhoan\Documents\MMDC\Connectly_Project_Miletone1\env
+=======
+set VIRTUAL_ENV=C:\Users\jhoan\Documents\MMDC\Connectly_Project_Miletone1\connectly_projectM1\env
+>>>>>>> 6cbdd50e (I commit)
 
 if not defined PROMPT set PROMPT=$P$G
 

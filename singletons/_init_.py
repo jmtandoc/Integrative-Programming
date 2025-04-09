@@ -1,0 +1,2 @@
+from singletons.config_manager import ConfigManager
+from singletons.logger_singleton import LoggerSingleton
