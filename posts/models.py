@@ -20,13 +20,13 @@ class Post(models.Model):
         ('public', 'Public'),
         ('private', 'Private'),
     ]
-    title = models.CharField(max_length=100)
     content = models.TextField()
-    privacy = models.CharField(max_length=10, choices=PRIVACY_CHOICES, default='public')
-    author = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='posts')
     created_at = models.DateTimeField(auto_now_add=True)
+    author = models.ForeignKey(CustomUser, on_delete=models.CASCADE)  # Foreign Key to CustomUser
+    privacy = models.CharField(max_length=7, choices=PRIVACY_CHOICES)
+    
     def __str__(self):
-        return f"{self.title} by {self.author.username}"
+        return self.content[:20]  # Display the first 20 chars
 
 # Comment model remains the same
 class Comment(models.Model):

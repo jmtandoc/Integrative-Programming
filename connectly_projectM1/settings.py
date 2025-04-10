@@ -28,7 +28,6 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework.authtoken',
     'social_django',
-    'django.contrib.auth',
 ]
 
 MIDDLEWARE = [
