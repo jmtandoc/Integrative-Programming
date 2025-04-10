@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
+from django.conf import settings
+
 # Extending User model to add roles
 class CustomUser(AbstractUser):
     ADMIN = 'admin'
