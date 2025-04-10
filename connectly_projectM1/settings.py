@@ -27,8 +27,8 @@ INSTALLED_APPS = [
     'django_extensions',
     'corsheaders',
     'rest_framework.authtoken',
-    'rest_framework_simplejwt',
     'social_django',
+    'django.contrib.auth',
 ]
 
 MIDDLEWARE = [
@@ -138,7 +138,6 @@ PASSWORD_HASHERS = [
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
@@ -169,3 +168,5 @@ CACHES = {
         'LOCATION': 'unique-snowflake',
     }
 }
+
+AUTH_USER_MODEL = 'posts.CustomUser'  # Make sure the app name is correct!
